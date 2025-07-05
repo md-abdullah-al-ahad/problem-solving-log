@@ -14,21 +14,19 @@ typedef pair<ll, ll> pi;
 
 void solve()
 {
-    int n;
-    cin>>n;
-    vector<int>v(n);
-    map<int,int>mpp;
-    for(int i = 0;i<n;i++){
-        cin>>v[i];
-        mpp[v[i]]++;
+    int a, b;
+    cin>>a>>b;
+    if(a>=b){
+        cout<<a<<"\n";
+        return;
     }
-    for(auto it:mpp){
-        if(it.second>=3){
-            cout<<it.first<<"\n";
-            return;
-        }
+    int c = b - a;
+    if((a-c)>=0){
+        cout<<a-c<<"\n";
+        return;
     }
-    cout<<-1<<"\n";
+    cout<<0<<"\n";
+    return;
 }
 
 int main()
