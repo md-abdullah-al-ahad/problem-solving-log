@@ -26,7 +26,7 @@ void solve()
     }
     if (n % 2 == 0)
     {
-        cout <<mx + (n / 2) << "\n";
+        cout << mx + (n / 2) << "\n";
         return;
     }
     for (int i = 0; i < n; i++)
@@ -43,7 +43,7 @@ void solve()
             }
         }
     }
-    cout<<total+mx<<"\n";
+    cout << total + mx << "\n";
     return;
 }
 
